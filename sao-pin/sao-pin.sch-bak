@@ -1,0 +1,93 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SAOSymbol:Badgelife_sao_connector_v169bis SAOConnector1
+U 1 1 5D53D36E
+P 2250 3700
+F 0 "SAOConnector1" H 2750 3750 50  0001 L CNN
+F 1 "SAO Connector" H 2750 3650 50  0000 L CNN
+F 2 "SAOFootprint:Badgelife-SAOv169-BADGE-2x3" H 2250 3900 50  0001 C CNN
+F 3 "" H 2250 3900 50  0001 C CNN
+	1    2250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3150 2050 2100
+Wire Wire Line
+	2050 2100 7600 2100
+Wire Wire Line
+	2050 4250 2250 4250
+Wire Wire Line
+	2450 4250 2250 4250
+Connection ~ 2250 4250
+Connection ~ 2450 4250
+Wire Wire Line
+	2450 4250 4400 4250
+Wire Wire Line
+	2250 3150 2450 3150
+Wire Wire Line
+	2450 3150 4400 3150
+Wire Wire Line
+	4400 3150 4400 4250
+Connection ~ 2450 3150
+Wire Wire Line
+	8500 3600 8500 3800
+$Comp
+L SparkFun-Batteries:BATTERY-20MM_SMD BT1
+U 1 1 5D5425E4
+P 8700 3800
+F 0 "BT1" H 8700 4210 45  0001 C CNN
+F 1 "BATTERY-20MM_SMD" H 8700 4126 45  0001 C CNN
+F 2 "Batteries:BATTCON_20MM" H 8700 4050 20  0001 C CNN
+F 3 "" H 8700 3800 50  0001 C CNN
+F 4 "Battery" H 8700 4031 60  0000 C CNN "Field4"
+	1    8700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4250 6350 4100
+Connection ~ 4400 4250
+Wire Wire Line
+	4400 4250 6350 4250
+Wire Wire Line
+	6650 4000 8900 4000
+Wire Wire Line
+	8900 4000 8900 3800
+$Comp
+L SparkFun-Switches:SWITCH-SPDT-SMD-AYZ0202 Switch
+U 1 1 5D546786
+P 7750 2850
+F 0 "Switch" H 7800 3036 45  0000 C CNN
+F 1 "SWITCH-SPDT-SMD-AYZ0202" H 7800 3142 45  0001 C CNN
+F 2 "SWITCH_DPDT_SMD_AYZ0202" H 7750 3100 20  0001 C CNN
+F 3 "" H 7750 2850 50  0001 C CNN
+F 4 "Switch" H 7800 3047 60  0001 C CNN "Field4"
+	1    7750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4100 6650 4100
+Wire Wire Line
+	6650 4100 6650 4000
+Wire Wire Line
+	7600 2100 7600 2850
+Wire Wire Line
+	7600 2850 7650 2850
+Wire Wire Line
+	7950 2950 7950 3600
+Wire Wire Line
+	7950 3600 8500 3600
+$EndSCHEMATC
